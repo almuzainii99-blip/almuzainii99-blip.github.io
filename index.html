@@ -44,6 +44,9 @@
       function addOne() {
         clicks = clicks + 1;
         document.getElementById("count").textContent = clicks;
+        if (clicks == 10) {
+          alert("Wow, 10 clicks! You're dedicated.");
+        }
       }
     </script>
   </body>
