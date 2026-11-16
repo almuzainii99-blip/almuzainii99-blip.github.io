@@ -35,5 +35,16 @@
       <li>gymming</li>
       <li>running</li>
     </ul>
+    <h2>Click the button</h2>
+    <button onclick="addOne()">Click me!</button>
+    <p>You clicked <span id="count">0</span> times.</p>
+      <script>
+      let clicks = 0;
+
+      function addOne() {
+        clicks = clicks + 1;
+        document.getElementById("count").textContent = clicks;
+      }
+    </script>
   </body>
 </html>
